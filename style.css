@@ -1,0 +1,431 @@
+/* Reset CSS para remover margens e preenchimentos padrão */
+html {
+  scroll-behavior: smooth;
+}
+
+span {
+  color: #6d0404;
+}
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Estilize a barra de navegação */
+header nav {
+  background-color: #030525;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Estilize o logotipo */
+header .logo img {
+  margin-top: 3px;
+  margin-left: 20px;
+  max-width: 50px;
+  text-decoration: none;
+}
+
+/* Estilize os links da barra de navegação */
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-right: 50px;
+}
+
+header li {
+  margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #fff; /* Cor padrão dos links */
+  font-weight: bold; /* Deixa o texto em negrito */
+  position: relative; /* Necessário para posicionar o sublinhado */
+  transition: color 0.3s;
+}
+
+/* Efeito de "hover" para o sublinhado crescente da esquerda para a direita */
+header a::before {
+  content: '';
+  position: absolute;
+  width: 0; /* Largura inicial do sublinhado */
+  height: 2px; /* Altura do sublinhado */
+  background-color: #ffffff; /* Cor do sublinhado (mesma cor da barra de navegação) */
+  bottom: -5px;
+  left: 1px;
+  transition: width 0.3s; /* Transição do sublinhado suave */
+}
+
+header a:hover::before {
+  width: 100%; /* O sublinhado cresce para 100% da largura no hover */
+}
+
+header a:hover::before, header a.active::before {
+  width: 100%; /* O sublinhado cresce para 100% da largura no hover ou quando o link está ativo */
+}
+
+
+.shapedividers_com-8917{
+overflow:hidden;
+position:relative;
+}
+.shapedividers_com-8917::before{ 
+content:'';
+font-family:'shape divider from ShapeDividers.com';
+position: absolute;
+z-index: 3;
+pointer-events: none;
+background-repeat: no-repeat;
+bottom: -0.1vw;
+left: -0.1vw;
+right: -0.1vw;
+top: -0.1vw; 
+background-size: 100% 400px;
+background-position: 50% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="%23030525"><path opacity=".5" d="M0 86.9V74.7l220.7-19.3L0 29.2V17.9l250 38-250 31z"/><path opacity=".5" d="M0 74.7v-8.8l145.2-12.7L0 36v-6.8l220.7 26.2L0 74.7z"/><path opacity=".5" d="M0 74.7v-8.8l145.2-12.7L0 36v-6.8l220.7 26.2L0 74.7z"/><path opacity=".5" d="M0 65.9V36l145.2 17.2L0 65.9z"/><path opacity=".5" d="M0 65.9V36l145.2 17.2L0 65.9z"/><path opacity=".75" d="M0 65.9V36l145.2 17.2L0 65.9z"/><path opacity=".5" d="M750 55.9l250-38v12.3L779.3 56.4 1000 75.7v11.2l-250-31zM500 18L250 56l250 31 250-31zM279.3 56.3L500 30.2l220.7 26.2L500 75.7z"/><path d="M500 17.9l-250 38-250-38v-18h1000v18l-250 38-250-38z"/><path d="M500 30.2L279.3 56.4 500 75.7l220.7-19.3zM335.4 55.5L500 36l164.6 19.5L500 70z" opacity=".5"/><path d="M500 30.2L279.3 56.4 500 75.7l220.7-19.3zM335.4 55.5L500 36l164.6 19.5L500 70z" opacity=".5"/><path opacity=".5" d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"/><path opacity=".5" d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"/><path opacity=".75" d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"/><path opacity=".5" d="M1000 30.2V36L854.9 53.2 1000 65.9v9.8L779.3 56.4 1000 30.2z"/><path opacity=".5" d="M1000 30.2V36L854.9 53.2 1000 65.9v9.8L779.3 56.4 1000 30.2z"/><path opacity=".5" d="M1000 36v29.9L854.9 53.2 1000 36z"/><path opacity=".5" d="M1000 36v29.9L854.9 53.2 1000 36z"/><path opacity=".75" d="M1000 36v29.9L854.9 53.2 1000 36z"/></g></svg>'); 
+} 
+
+   
+
+#hero {
+  background-size: cover;
+  color: #000000;
+  text-align: center;
+  padding: 300px 0;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+}
+
+#hero a {
+  margin-top: 50px;
+}
+
+.button {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  border-radius:3px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:#ffffff;
+  background-color:#6d0404;
+  outline:none;
+  border:none;
+  cursor:pointer;
+  display:inline-block;
+  text-decoration: none;  
+  transition: .4s;
+ 
+  }
+  
+  .button:hover {  
+  background-color:#030525;
+  
+  }
+
+/* Adicione estilos específicos para a seção de reservas */
+#reservations {
+  background-color: #f8f8f8;
+  padding: 100px 0;
+  margin-top: 50;
+  text-align: center;
+}
+
+.reservations-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.reservations-description {
+  flex-basis: 100%; /* Alterado para 100% para ocupar toda a largura */
+  text-align: center; /* Centralizado o texto */
+}
+
+.reservations-description h2 {
+  color: #030525;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.reservations-description p {
+  font-size: 18px;
+}
+
+.reservation-form {
+  flex-basis: 45%;
+}
+
+.reservation-form h3 {
+  color: #6d0404;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.reservation-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reservation-form label {
+  margin-bottom: 10px;
+}
+
+.reservation-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#menu {
+  color: #030525;
+  text-align: center;
+  padding: 100px 0;
+  margin-top: 50px;
+  background-color: #ffffff; /* Fundo branco para destacar o menu */
+}
+
+#menu h1 {
+  font-size: 36px;
+  margin-top: 100px;
+}
+
+
+.menu-section {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding-right: 2px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.menu-section h3 {
+  color: #030525;
+  text-align: center;
+  align-items: center;
+
+}
+
+.menu-category {
+  text-align: left;
+  border-right: 1px 0 solid #6d0404 ; /* Adiciona uma borda direita para separar as seções */
+  padding-right: 115px; /* Adiciona um espaçamento à direita para a borda */
+  margin-bottom: 50px; /* Espaçamento entre as seções */
+  margin-top: 50px;
+  margin-left: 50px;
+  position: relative; /* Adiciona posição relativa para elementos absolutos internos */
+}
+
+.menu-category::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  background-color: #6d0404 ; /* Cor da barra vertical */
+}
+
+.menu-category:last-child::after {
+  display: none; /* Remove a barra vertical na última seção para evitar excessos */
+}
+
+.menu-category h3 {
+  font-size: 20px;
+  margin-bottom: 10px; /* Espaçamento entre o título e a lista */
+}
+
+.menu-category ul {
+  list-style: none;
+  padding: 1px;
+}
+
+.menu-category li {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.menu-category a {
+  text-decoration: none;
+  color: #6d0404;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-category a:hover {
+  color: #1a1817;
+}
+
+#gallery {
+  background-color: #f8f8f8;
+  color: #000000;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#gallery h1 {
+  font-size: 36px;
+  margin-top: 100px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-gallery img {
+  justify-content: center;
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilize o footer */
+footer {
+  background-color: #1a1817;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  justify-content:space-around
+}
+
+/* Estilize as seções do footer */
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  color: #6d0404;
+  margin-right: 10px;
+}
+
+.footer-section img {
+  margin: 0 10px;
+  width: 30px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Adicione uma barra horizontal */
+hr {
+  border: 1px solid #6d0404;
+  margin: 20px 0;
+}
+
+/* Adicione estilos ao texto de direitos autorais */
+.copyright {
+  font-size: 14px;
+}
+
+
+  @media only screen and (max-width: 768px) {
+  
+    #hero {
+      padding: 150px 0;
+    }
+  
+    #hero h1 {
+      font-size: 24px;
+      margin-top: 300px;
+      margin-bottom: 10px;
+    }
+  
+    #hero p {
+      font-size: 16px;
+    }
+  
+    #menu {
+      padding: 50px 0;
+      margin-top: 30px;
+    }
+  
+    #menu h1 {
+      font-size: 24px;
+      margin-top: 50px;
+    }
+  
+    .menu-category {
+      padding-right: 15px;
+      margin-bottom: 30px;
+      margin-left: 15px;
+    }
+  
+    .menu-category h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  
+    .menu-category ul {
+      padding: 0;
+    }
+  
+    .menu-category li {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    #gallery {
+      padding: 50px 0;
+    }
+  
+    #gallery h1 {
+      font-size: 24px;
+      margin-top: 50px;
+    }
+  
+    .image-gallery {
+      padding: 20px;
+    }
+  
+    .image-gallery img {
+      width: 50%;
+      max-width: 100%;
+    }
+  }
+  
+   
+   

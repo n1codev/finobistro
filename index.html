@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="./img/logo 2.png" type="image/png">
+    <link rel="shortcut icon" href="./img/logo 2.png" type="image/png">
+    <!-- START Widget WhastApp hospedagemwordpresspro -->
+    <a href="https://api.whatsapp.com/send?phone=5500123456789&text=Olá!%20Gostaria%20de%20fazer%20um%20reserva." id="waurlsite" class="bt-whatsApp" target="_blank" style="right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIxMDAlIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnNlcmlmPSJodHRwOi8vd3d3LnNlcmlmLmNvbS8iIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cmVjdCBoZWlnaHQ9IjI0IiBpZD0iQXJ0Ym9hcmQxIiBzdHlsZT0iZmlsbDpub25lOyIgd2lkdGg9IjI0IiB4PSIwIiB5PSIwIi8+PGc+PGc+PHBhdGggZD0iTTQuMDE4LDE3LjA0OGMtMC45NiwtMS40ODQgLTEuNTE4LC0zLjI1MyAtMS41MTgsLTUuMTUxYzAsLTUuMjQzIDQuMjU3LC05LjUgOS41LC05LjVjNS4yNDMsMCA5LjUsNC4yNTcgOS41LDkuNWMwLDUuMjQzIC00LjI1Nyw5LjUgLTkuNSw5LjVjLTEuNzc3LDAgLTMuNDQsLTAuNDg5IC00Ljg2MywtMS4zMzlsLTQuNjM3LDEuNTQ1bDEuNTE4LC00LjU1NVoiIHN0eWxlPSJmaWxsOiNmM2YzZjM7Ii8+PHBhdGggZD0iTTUuNzk1LDE2LjMwNGMtMC44ODYsLTEuMjQ0IC0xLjQwNywtMi43NjUgLTEuNDA3LC00LjQwN2MwLC00LjIwMSAzLjQxMSwtNy42MTIgNy42MTIsLTcuNjEyYzQuMjAxLDAgNy42MTIsMy40MTEgNy42MTIsNy42MTJjMCw0LjIwMSAtMy40MTEsNy42MTEgLTcuNjEyLDcuNjExYy0xLjU5LDAgLTMuMDY2LC0wLjQ4OCAtNC4yODgsLTEuMzIzbC0yLjg2MiwwLjk1NGwwLjk0NSwtMi44MzVaIiBzdHlsZT0iZmlsbDojMDBhODJkOyIvPjwvZz48cGF0aCBkPSJNOS43MTQsMTMuODczYy0xLjEyNCwtMS4zNzQgLTEuODc0LC0zLjA1NiAtMi4xMDksLTQuODhjLTAuMDYzLC0wLjUwOCAwLjEwNiwtMS4wMTggMC40NjEsLTEuMzg3YzAuMzU1LC0wLjM2OSAwLjg1OCwtMC41NTggMS4zNjgsLTAuNTE1bDAuMDQ5LDAuMDA1YzAsMCAwLjU2MSwwLjE1IDAuODY4LDAuMjMzYzAuMTIyLDAuMDMzIDAuMjE5LDAuMTI0IDAuMjYsMC4yNDNjMC4xMzgsMC40MSAwLjQ2NCwxLjM3MyAwLjYxOCwxLjgyNmMwLjA1LDAuMTQ3IDAuMDA0LDAuMzEgLTAuMTE0LDAuNDFjLTAuMjMzLDAuMTk2IC0wLjYxOCwwLjUyIC0wLjg1OCwwLjcyM2MtMC4xMjksMC4xMDkgLTAuMTcsMC4yOSAtMC4xLDAuNDQzYzAuMjc5LDAuNjA4IDAuNjM1LDEuMTc2IDEuMDU3LDEuNjljMC40MzQsMC41MDIgMC45MzMsMC45NDkgMS40ODUsMS4zMjdjMC4xNCwwLjA5NSAwLjMyNSwwLjA4NSAwLjQ1NCwtMC4wMjRjMC4yNDEsLTAuMjAyIDAuNjI2LC0wLjUyNiAwLjg1OCwtMC43MjJjMC4xMTksLTAuMSAwLjI4NywtMC4xMTcgMC40MjQsLTAuMDQzYzAuNDIsMC4yMjggMS4zMTQsMC43MTIgMS42OTQsMC45MThjMC4xMTEsMC4wNiAwLjE4NSwwLjE3MiAwLjE5NiwwLjI5N2MwLjAyOSwwLjMxNyAwLjA4MywwLjg5NSAwLjA4MywwLjg5NWwtMC4wMDQsMC4wNDljLTAuMDQ0LDAuNTEgLTAuMzE1LDAuOTc0IC0wLjczOSwxLjI2MWMtMC40MjQsMC4yODggLTAuOTU1LDAuMzY4IC0xLjQ0NSwwLjIyYy0xLjc3MiwtMC41NDUgLTMuMzEzLC0xLjU4MSAtNC40NzksLTIuOTM3bC0wLjAyNywtMC4wMzJaIiBzdHlsZT0iZmlsbDojZjNmM2YzOyIvPjwvZz48L3N2Zz4=" alt="" width="60px">
+    </a>
+    <span id="alertWapp" style="right:30px; visibility: hidden; position:fixed;	width:17px;	height:17px;bottom:90px; background:red;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; "> 1 </span>
+    <div id="msg1" style="right: 90px; visibility: visible; background: #6d0404; color: #fff; position: fixed; width: 200px; bottom: 52px; text-align: center; font-size: 13px; line-height: 31px; height: 32px; border-radius: 100px; z-index: 100;border: 1px solid #000000; ">Fale conosco via whatsapp.</div>
+    <script type="text/javascript">function showIt2() {document.getElementById("msg1").style.visibility = "visible";}    setTimeout("showIt2()", 5000); function hiddenIt() {document.getElementById("msg1").style.visibility = "hidden";}setTimeout("hiddenIt()", 15000); function showIt3() {document.getElementById("msg1").style.visibility = "visible";} setTimeout("showIt3()", 25000);  msg1.onclick = function() {document.getElementById('msg1').style.visibility = "hidden"; };function alertW() { document.getElementById("alertWapp").style.visibility = "visible";	} setTimeout("alertW()", 15000); </script>
+    <!-- END Widget WhastApp -->
+    
+    <title>Fino Bistrô</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="./img/logo.png" alt="Logo do Restaurante">
+            </div>
+            <div class="nav-bar">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#reservations">Reservas</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="shapedividers_com-8917">
+        <div class="apresentação">
+            <h1>Bem-vindo ao Fino Bistrô</h1>
+            <p>Descubra uma experiência gastronômica excepcional.</p>
+        </div>
+
+        <a href="#reservations" class="button">Faça sua reserva</a>
+        <a href="#menu" class="button">Conheça nosso menu</a>
+
+    </section>
+    <section id="reservations">
+        <div class="reservations-content">
+            <div class="reservations-description">
+                <h2>Reserve uma Mesa Exclusiva</h2>
+                <p>Desfrute de uma experiência gastronômica única no Fino Bistrô. Garanta sua mesa agora para vivenciar momentos inesquecíveis de sabor e sofisticação.</p>
+            </div>
+    
+            <!-- Formulário de Reserva -->
+            <div class="reservation-form">
+                <h3>Formulário de Reserva</h3>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+    
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+    
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+    
+                    <a type="submit" href="#menu" class="button">Enviar reserva</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Cardápio</h2>
+        <div class="menu-section">
+            <!-- Entradas -->
+    <div class="menu-category">
+    <h3>Entradas</h3>
+    <ul>
+        <li><span>1</span>. Bruschetta de Tomate e Manjericão</li>
+        <li><span>2</span>. Rolinhos de Primavera com Molho Agridoce</li>
+        <li><span>3</span>. Carpaccio de Abobrinha com Parmesão</li>
+    </ul>
+    </div>
+
+    <!-- Principais -->
+    <div class="menu-category">
+    <h3>Principais</h3>
+    <ul>
+        <li><span>1</span>. Risoto de Cogumelos com Trufas</li>
+        <li><span>2</span>. Salmão Grelhado com Molho de Maracujá</li>
+        <li><span>3</span>. Massa Carbonara com Bacon Crocante</li>
+    </ul>
+    </div>
+    <!-- Sobremesas -->
+    <div class="menu-category">
+    <h3>Sobremesas</h3>
+    <ul>
+        <li><span>1</span>. Tiramisù</li>
+        <li><span>2</span>. Pudim de Leite Condensado</li>
+        <li><span>3</span>. Profiteróis com Calda de Chocolate</li>
+    </ul>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-category">
+    <h3>Drinks</h3>
+    <ul>
+        <li><span>1</span>. Mojito de Morango</li>
+        <li><span>2</span>. Caipirinha de Maracujá</li>
+        <li><span>3</span>. Martini de Maçã Verde</li>
+    </ul>
+    </div>
+    </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeria</h2>
+        <div class="image-gallery">
+            <img src="./img/restaurante1.jpg" alt="Imagem 1">
+            <img src="./img/restaurante2.jpg" alt="Imagem 2">
+            <img src="./img/restaurante3.jpg" alt="Imagem 3">
+        </div>
+    </section>
+
+    <footer>
+        <section id="contact">
+            <h2>Contato</h2>
+            <div class="contact-content">
+                <div class="social-media">
+                    <h2>Redes Sociais</h2>
+                    <div><ion-icon name="logo-instagram"></ion-icon>
+                        <a href="Instagram">Instagram</a>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    <p>Contato: finobistro@email.com</p>
+                    <p>WhatsApp: (00) 1 2345-6789</p>
+                </div>
+            </div>
+            <hr>
+                <p class="copyright">© 2023 Fino Bistrô. Todos os direitos reservados. Todas as informações presentes são fictícias. Desenvolvido por Nico Berbert</p>
+        </section>
+    </footer>    
+</body>
+</html>
